@@ -1,4 +1,5 @@
-import { Github, Linkedin, LucideSquareDashedBottomCode , Twitter } from "lucide-react";
+import { Github, Linkedin , Twitter } from "lucide-react";
+import { SiLeetcode } from "react-icons/si";
 
 export const SOCIAL_LINKS = [
   { 
@@ -12,7 +13,7 @@ export const SOCIAL_LINKS = [
     label: "LinkedIn" 
   },
   { 
-    icon: LucideSquareDashedBottomCode, 
+    icon: SiLeetcode, 
     href: "https://leetcode.com/u/muj1t1D8eH/", 
     label: "Leetcode" 
   },

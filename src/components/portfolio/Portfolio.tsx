@@ -6,7 +6,7 @@ import EmailSidebar from "./EmailSidebar";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import SkillsSection from "./SkillsSection-Front-End";
-// import ExperienceSection from "./ExperienceSection";
+import ExperienceSection from "./ExperienceSection";
 import ProjectsSection from "./ProjectsSection"
 import ContactSection from "./ContactSection";
 import Footer from "./Footer";
@@ -63,7 +63,7 @@ const Portfolio = () => {
         <HeroSection onSectionClick={scrollToSection} />
         <AboutSection />
         <SkillsSection />
-        {/* <ExperienceSection /> */}
+        <ExperienceSection />
         <ProjectsSection />
         <ContactSection />
       </main>

@@ -2,9 +2,8 @@ import { cn } from "@/lib/utils";
 import {
   SiTypescript,
   SiNextdotjs,
-  SiBlender,
   SiHtml5,
-  SiCss3,
+  // SiCss3,
   SiJavascript,
   SiReact,
   SiRedux,
@@ -13,21 +12,24 @@ import {
   SiDocker ,
   SiGraphql ,
   SiNetlify ,
-  // SiPostgresql ,
   SiSentry ,
-  SiStackoverflow ,
   SiAntdesign ,
   SiShadcnui ,
-  // SiSupabase ,
   SiBootstrap,
   SiTailwindcss,
-  SiPython,
   SiGit,
   SiGithub,
   SiVite,
+  SiGsap,
   SiPostman,
+  SiReactquery ,
+
 } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { RiSupabaseFill } from "react-icons/ri";
 import { TbBrandVercel } from "react-icons/tb";
+import { BiLogoCss3 } from "react-icons/bi";
+
 import { Reveal, FadeInStagger, FadeInItem } from "@/components/animations/Reveal";
 import { useTheme } from "@/contexts/ThemeContext";
 import DotGrid from "@/components/animations/DotGrid";
@@ -42,15 +44,14 @@ const BRAND_COLORS: Record<string, string> = {
   "React Router": "#CA4245",
   "Next.js": "#FFFFFF",
   "Three.js": "#FFFFFF",
-  "Docker": "#68A063",
+  AntDesign: "#FF6B6B",
   Bootstrap: "#7952B3",
   "Tailwind CSS": "#38BDF8",
+  "Shadcn": "#00599C",
+  "Docker": "#68A063",
   DaisyUI: "#A78BFA",
   GraphQL: "#F89820",
   Supabase: "#A8B9CC",
-  "Shadcn": "#00599C",
-  Python: "#3776AB",
-  AntDesign: "#FF6B6B",
   Netlify: "#47A248",
   PostgreSQL: "#4479A1",
   Git: "#F05032",
@@ -60,7 +61,8 @@ const BRAND_COLORS: Record<string, string> = {
   Postman: "#FF6C37",
   Stackoverflow: "#FFC50F",
   Vercel: "#FFFFFF",
-  Blender: "#F5792A",
+  "React Query": "#FF6B6B",
+  gsap: "#88CE02",
 };
 
 function alpha(hex: string, a: number) {
@@ -74,7 +76,7 @@ function alpha(hex: string, a: number) {
 
 const skills = [
   { name: "HTML", icon: SiHtml5 },
-  { name: "CSS", icon: SiCss3 },
+  { name: "CSS", icon: BiLogoCss3 },
   { name: "JavaScript", icon: SiJavascript },
   { name: "TypeScript", icon: SiTypescript },
   { name: "React.js", icon: SiReact },
@@ -86,20 +88,19 @@ const skills = [
   { name: "Bootstrap", icon: SiBootstrap },
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "GraphQL", icon: SiGraphql },
-  // { name: "Supabase", icon: SiSupabase },
   { name: "Shadcn", icon: SiShadcnui },
   { name: "AntDesign", icon: SiAntdesign },
-  { name: "Python", icon: SiPython },
   { name: "Netlify", icon: SiNetlify },
-  // { name: "PostgreSQL", icon: SiPostgresql },
   { name: "Sentry", icon: SiSentry },
   { name: "Git", icon: SiGit },
   { name: "GitHub", icon: SiGithub },
   { name: "Vite", icon: SiVite },
-  { name: "Stackoverflow", icon: SiStackoverflow },
   { name: "Postman", icon: SiPostman },
+  { name: "React Query", icon: SiReactquery },
+  { name: "gsap", icon: SiGsap },
+  { name: "PostgreSQL", icon: BiLogoPostgresql },
+  { name: "Supabase", icon: RiSupabaseFill },
   { name: "Vercel", icon: TbBrandVercel },
-  { name: "Blender", icon: SiBlender },
 ];
 
 const SkillsSection = () => {
@@ -120,7 +121,7 @@ const SkillsSection = () => {
 
         <Reveal>
           <div
-            className="skills-shell mt-16 p-8 relative min-h-[600px] overflow-hidden bg-background
+            className="skills-shell mt-16 p-8 relative min-h-[400px]  overflow-hidden bg-background
               border border-white/10"
           >
             <div className="absolute inset-0 bg-background backdrop-blur-[1px] z-0" />

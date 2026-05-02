@@ -1,7 +1,4 @@
 import { Github, ExternalLink } from "lucide-react";
-import ledgerProjectImage from "@/assets/ledger.png";
-import apexscriptImage from "@/assets/apexscript.png";
-import tradeproImage from "@/assets/tradepro.png"
 import { Reveal, FadeInStagger, FadeInItem } from "@/components/animations/Reveal";
 
 const ProjectsSection = () => {
@@ -9,7 +6,7 @@ const ProjectsSection = () => {
         {
             title: "Advance Dashboard",
             description: "This project focuses on designing and developing a modern financial analytics dashboard that clearly and visually presents key performance indicators (KPIs). It provides real-time insights into metrics such as revenue, sales, conversion rate, session duration, profit trends, and traffic sources. With a clean, intuitive UX and a dark-themed UI, the dashboard uses interactive line, bar, and donut charts to help users quickly analyze data and make informed decisions.",
-            image: ledgerProjectImage,
+            image: "",
             technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "JWT"],
             github: "https://github.com/webcoding44/Advance-Dashboard-App/tree/main/src",
             live: "https://marvelous-sable-125bec.netlify.app/",
@@ -17,7 +14,7 @@ const ProjectsSection = () => {
         {
             title: "Advance E-Commerce",
             description: "Shopfinity is a modern and customer-focused online store committed to delivering high-quality products across fashion, electronics, and everyday essentials at competitive prices. With a seamless browsing experience, secure payments, fast shipping, and responsive customer support, Shopfinity makes online shopping simple, reliable, and enjoyable. Our mission is to combine style, innovation, and convenience in one trusted platform where quality meets accessibility for everyone.",
-            image: apexscriptImage,
+            image: "",
             technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
             github: "https://github.com/webcoding44",
             live: "https://onlin-shop.vercel.app/",

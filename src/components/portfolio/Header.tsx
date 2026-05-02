@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Logo from "../../../public/soft.png"
 import { Link } from "react-router-dom";
 import { NAV_ITEMS } from "@/constants";
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import { BiCodeAlt } from "react-icons/bi";
+
 
 interface HeaderProps {
   onSectionClick: (section: string) => void;
@@ -16,7 +17,7 @@ const Header = ({ onSectionClick }: HeaderProps) => {
       <div className="container mx-auto px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="animate-fade-in">
-            <img src={Logo} alt="Logo" className="h-20 w-auto" />
+            <BiCodeAlt className="text-green-500 h-8 w-8 ml-2" />
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">

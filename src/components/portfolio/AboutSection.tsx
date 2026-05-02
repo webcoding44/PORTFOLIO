@@ -1,17 +1,14 @@
 import {
-  Bike,
   Brain,
   Code2,
   Download,
   Globe2,
   GraduationCap,
-  Heart,
-  Lightbulb,
-  Music,
   Users,
-  Wrench,
-  Flexible ,
-
+  MessageCircle ,
+  Clock,
+  MessagesSquare,
+  TrendingUp ,
 } from "lucide-react";
 import Lottie from "lottie-react";
 import { WiStars } from "react-icons/wi";
@@ -29,25 +26,25 @@ const AboutSection = () => {
       bg: "bg-blue-500/10",
     },
     {
-      icon: Bike,
-      label: "Cycling",
+      icon: Clock,
+      label: "Time Management",
       color: "text-green-500",
       bg: "bg-green-500/10",
     },
     {
-      icon: Music,
-      label: "Music",
+      icon: Brain,
+      label: "Critical Thinking",
       color: "text-purple-500",
       bg: "bg-purple-500/10",
     },
     {
-      icon: Wrench,
-      label: "Kartimi",
+      icon: TrendingUp,
+      label: "Adaptability & Continuous Learning",
       color: "text-orange-500",
       bg: "bg-orange-500/10",
     },
     {
-      icon: Lightbulb,
+      icon: MessageCircle,
       label: "Problem Solving",
       color: "text-yellow-500",
       bg: "bg-yellow-500/10",
@@ -59,8 +56,8 @@ const AboutSection = () => {
       bg: "bg-red-500/10",
     },
     {
-      icon: Heart,
-      label: "Flexible",
+      icon: MessagesSquare,
+      label: "Teamwork",
       color: "text-pink-500",
       bg: "bg-pink-500/10",
     },
