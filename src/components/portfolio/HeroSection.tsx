@@ -1,0 +1,114 @@
+import { useEffect, useState } from "react";
+import { ChevronDown } from "lucide-react";
+import Lottie from "lottie-react";
+import heroAnimationData from "../../assets/hero-page-animation.json";
+import { Reveal } from "@/components/animations/Reveal";
+
+interface HeroSectionProps {
+  onSectionClick: (section: string) => void;
+}
+
+const HERO_TEXTS = [
+  "Front-End Engineer building fast, responsive apps.",
+  "Crafting clean UI with React & modern JS.",
+  "Focused on performance and user experience.",
+  "Turning ideas into smooth web interfaces.",
+] as const;
+
+const HeroSection = ({ onSectionClick }: HeroSectionProps) => {
+  const [currentText, setCurrentText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const text = HERO_TEXTS[currentIndex];
+    let timeoutId: NodeJS.Timeout;
+
+    if (currentText.length < text.length) {
+      timeoutId = setTimeout(() => {
+        setCurrentText(text.slice(0, currentText.length + 1));
+      }, 10);
+    } else {
+      timeoutId = setTimeout(() => {
+        setCurrentText("");
+        setCurrentIndex((prev) => (prev + 1) % HERO_TEXTS.length);
+      }, 2000);
+    }
+
+    return () => clearTimeout(timeoutId);
+  }, [currentText, currentIndex]);
+
+  return (
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 text-center"
+      style={{ background: "var(--gradient-hero)" }}
+    >
+      <div className="max-w-7xl px-4 sm:px-6 lg:px-8 3xl:px-12 4xl:px-16 w-full">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 3xl:gap-16 4xl:gap-20 items-center">
+          <div className="text-center md:text-left">
+            <Reveal>
+              <p className="text-primary font-mono text-lg mb-4 tracking-widest uppercase">
+                Hello, I'm
+              </p>
+            </Reveal>
+
+            <Reveal delay={0.05}>
+              <h1 className="text-hero font-black text-foreground mb-4">
+                Safi Rahman
+              </h1>
+            </Reveal>
+
+            <Reveal delay={0.1}>
+              <h3 className="text-hero-sub font-bold text-gray-500 mb-8 h-12 flex items-center justify-center md:justify-start">
+                <span className="typewriter">{currentText}</span>
+              </h3>
+            </Reveal>
+
+            <Reveal delay={0.15}>
+              <div className="max-w-2xl mx-auto md:mx-0">
+                <p className="text-lg leading-relaxed text-foreground/80">
+I build modern web applications including business websites, SaaS platforms, and AI-powered apps. I focus on performance, scalability, and clean user experiences that drive real results.                </p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.2}>
+              <div className="relative z-10 flex flex-col sm:flex-row gap-6 justify-center md:justify-start mt-12">
+                <button
+                  onClick={() => onSectionClick("projects")}
+                  className="neobrutalist-button neobrutalist-button-primary px-8 py-4 text-lg group"
+                >
+                  <span className="relative z-10">View My Work</span>
+                </button>
+                <button
+                  onClick={() => onSectionClick("contact")}
+                  className="neobrutalist-button neobrutalist-button-secondary px-8 py-4 text-lg group"
+                >
+                  <span className="relative z-10">Get In Touch</span>
+                </button>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.25}>
+            <div className="flex items-center justify-center">
+              <Lottie animationData={heroAnimationData} loop={true} className="w-full h-auto max-w-xl 3xl:max-w-2xl 4xl:max-w-3xl" />
+            </div>
+          </Reveal>
+        </div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
+        <div className="flex flex-col items-center space-y-2 animate-float cursor-pointer" onClick={() => onSectionClick("about")}>
+          <span className="text-primary font-mono text-sm tracking-wider uppercase">Scroll</span>
+          <ChevronDown
+            size={24}
+            className="text-primary"
+          />
+        </div>
+      </div>
+    </section>
+
+  );
+};
+
+export default HeroSection;
