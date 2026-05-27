@@ -23,12 +23,24 @@ import {
   SiGsap,
   SiPostman,
   SiReactquery ,
+  SiPosthog ,
+  SiCoderabbit ,
+  SiNginx ,
+  SiSocketdotio ,
+  SiBetterauth ,
+  SiDrizzle ,
+  SiRapid ,
+
+
+
 
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiSupabaseFill } from "react-icons/ri";
 import { TbBrandVercel } from "react-icons/tb";
 import { BiLogoCss3 } from "react-icons/bi";
+import { FaChartBar , FaStripe } from "react-icons/fa";
+
 
 import { Reveal, FadeInStagger, FadeInItem } from "@/components/animations/Reveal";
 import { useTheme } from "@/contexts/ThemeContext";
@@ -63,6 +75,16 @@ const BRAND_COLORS: Record<string, string> = {
   Vercel: "#FFFFFF",
   "React Query": "#FF6B6B",
   gsap: "#88CE02",
+  FaChartBar: "#FF6B6B",
+  FaStripe: "#635BFF",
+  SiPosthog: "#FF6B6B",
+  SiCoderabbit: "#FF6B6B",
+  SiSentry : "#FF6B6B",
+  SiSocketdotio: "#010101",
+  SiNginx: "#009639",
+  SiBetterauth  : "#FF6B6B",
+  SiDrizzle : "#FF6B6B",
+  SiRapid : "#FF6B6B",
 };
 
 function alpha(hex: string, a: number) {
@@ -101,16 +123,26 @@ const skills = [
   { name: "PostgreSQL", icon: BiLogoPostgresql },
   { name: "Supabase", icon: RiSupabaseFill },
   { name: "Vercel", icon: TbBrandVercel },
+  {name: "Chart.js", icon: FaChartBar },
+  {name: "Posthog", icon: SiPosthog },
+  {name: "Coderabbit", icon: SiCoderabbit },
+  {name: "Sentry", icon: SiSentry },
+  {name: "Socket.io", icon: SiSocketdotio },
+  {name: "Nginx", icon: SiNginx },
+  {name: "Stripe", icon: FaStripe },
+  {name: "BetterAuth", icon: SiBetterauth },
+  {name: "Drizzle", icon: SiDrizzle },
+  {name: "Rapid", icon: SiRapid },
 ];
 
 const SkillsSection = () => {
   const { theme } = useTheme();
 
   return (
-    <section id="skills" className="py-16 px-4 relative">
+    <section id="" className="py-16 px-4 relative">
       <div className="container mx-auto max-w-6xl">
         <Reveal>
-          <h2 className="section-title text-center">My Skills</h2>
+          <h1 className="section-title text-center">My Skills</h1>
         </Reveal>
 
         <Reveal>
@@ -192,6 +224,14 @@ const SkillsSection = () => {
           </div>
         </Reveal>
       </div>
+
+
+        
+
+        
+
+
+
     </section>
   );
 };
