@@ -1,38 +1,39 @@
 import { Github, ExternalLink } from "lucide-react";
 import { Reveal, FadeInStagger, FadeInItem } from "@/components/animations/Reveal";
+import Cryptoplus from "../../../public/images/dfvbkd.png";
 
 const ProjectsSection = () => {
     const featuredProjects = [
         {
-            title: "Advance Dashboard",
-            description: "This project focuses on designing and developing a modern financial analytics dashboard that clearly and visually presents key performance indicators (KPIs). It provides real-time insights into metrics such as revenue, sales, conversion rate, session duration, profit trends, and traffic sources. With a clean, intuitive UX and a dark-themed UI, the dashboard uses interactive line, bar, and donut charts to help users quickly analyze data and make informed decisions.",
-            image: "",
-            technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "JWT"],
-            github: "https://github.com/webcoding44/Advance-Dashboard-App/tree/main/src",
-            live: "https://marvelous-sable-125bec.netlify.app/",
+            title: "CryptoPulse Dashboard",
+            description: "CryptoPulse is a comprehensive cryptocurrency dashboard built with Next.js, React, TypeScript, Tailwind CSS, Supabase, and JWT. It provides real-time market data, portfolio tracking, and personalized insights to help users stay informed and make informed decisions in the dynamic world of cryptocurrencies.",
+            image: Cryptoplus,
+            technologies: ["Next.js", "CoinGecko API", "TypeScript", "Tailwind CSS", "WebSockets"],
+            github: "https://github.com/webcoding44/CryptoPulse",
+            live: "https://crypto-pulse-eta.vercel.app/",
         },
         {
-            title: "Advance E-Commerce with Dashboard",
-            description: "Shopfinity is a modern and customer-focused online store committed to delivering high-quality products across fashion, electronics, and everyday essentials at competitive prices. With a seamless browsing experience, secure payments, fast shipping, and responsive customer support, Shopfinity makes online shopping simple, reliable, and enjoyable. Our mission is to combine style, innovation, and convenience in one trusted platform where quality meets accessibility for everyone.",
-            image: "",
-            technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
-            github: "https://github.com/webcoding44",
-            live: "https://onlin-shop.vercel.app/",
-        },
-        {
-            title: "SaaS Platform",
-            description: "This platform offers secure authentication, subscription management, and integrated payments, while functioning as a real-time interactive teaching system powered by Vapi. It features AI voice agents for dynamic tutoring, seamless session management, and an engaging learning experience. Users can sign in securely (including Google), manage billing, bookmark tutors, review session history, and even create custom AI tutors. Built with reusable components and a modular structure, it ensures efficient and scalable development.",
+            title: "A HealthCare Management System",
+            description: "A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.",
             image: "",
             technologies: ["Next.js", "TypeScript", "JWT", "Supabase", "Tailwindcss"],
-            github: "https://github.com/webcoding44",
-            live: "https://lambent-arithmetic-ac4d58.netlify.app/",
+            github: "",
+            live: "",
+        },
+        {
+            title: "Advance Chat Application",
+            description: "",
+            image: "",
+            technologies: ["Next.js", "TypeScript", "JWT", "Supabase", "Tailwindcss"],
+            github: "",
+            live: "",
         },
             {
-            title: "Movie Webapplication",
-            description: "This platform offers secure authentication, subscription management, and integrated payments, while functioning as a real-time interactive teaching system powered by Vapi. It features AI voice agents for dynamic tutoring, seamless session management, and an engaging learning experience. Users can sign in securely (including Google), manage billing, bookmark tutors, review session history, and even create custom AI tutors. Built with reusable components and a modular structure, it ensures efficient and scalable development.",
+            title: "Spotify Music Player",
+            description: "",
             image: "",
-            technologies: ["Next.js", "TypeScript", "JWT", "Supabase", "Tailwindcss"],
-            github: "https://github.com/webcoding44",
+            technologies: ["Next.js", "TypeScript", "Rapid API", "", "Tailwindcss"],
+            github: "https://github.com/webcoding44/Movie-Webapplication",
             live: "https://lambent-arithmetic-ac4d58.netlify.app/",
         }
     ];
@@ -60,11 +61,11 @@ const ProjectsSection = () => {
             live: "https://webcoding44.github.io/Advance-Restaurant-with-Animation/",
         },
         {
-            title: "Chat-Application",
-            description: "",
-            technologies: ["Next.JS", "Supabse", "Tailwind CSS"],
-            github: "",
-            live: "",
+            title: "E-Commerce Website(template)",
+            description: "A modern and stylish online store template designed with a clean and attractive user interface. This project focuses on beautiful design and smooth user experience. It is currently a front-end template without functionality, but it can be a great base for a complete e-commerce website in the future.",
+            technologies: ["HTML", "CSS" , "JS"],
+            github: "https://github.com/webcoding44",
+            live: "https://webcoding44.github.io/E-Commerce-Website-template-/",
         },
         {
             title: "Chat-Application Video Call",
