@@ -1,6 +1,8 @@
 import { Github, ExternalLink } from "lucide-react";
 import { Reveal, FadeInStagger, FadeInItem } from "@/components/animations/Reveal";
 import Cryptoplus from "../../../public/images/dfvbkd.png";
+import Crm from "../../../public/images/crm.png";
+import Markit from "../../../public/images/dashboard-preview.png"
 
 const ProjectsSection = () => {
     const featuredProjects = [
@@ -13,28 +15,28 @@ const ProjectsSection = () => {
             live: "https://crypto-pulse-eta.vercel.app/",
         },
         {
-            title: "A HealthCare Management System",
-            description: "A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.",
-            image: "",
-            technologies: ["Next.js", "TypeScript", "JWT", "Supabase", "Tailwindcss"],
-            github: "",
+            title: "Stock Market Platform",
+            description: "A modern AI-powered stock market platform built with Next.js that delivers real-time market data, interactive charts, and intelligent financial insights. Users can track live stock prices, manage watchlists, receive smart alerts, and explore detailed company analytics including news, financial metrics, and sentiment analysis. The platform also features an admin dashboard for managing stocks and publishing updates, with event-driven workflows enabling automated notifications and AI-powered market summaries.",
+            image: Markit,
+            technologies: ["Next.js", "TypeScript", "Better Auth", "Finnhub API", "Tailwindcss"],
+            github: "https://github.com/webcoding44/Markit-App",
             live: "",
         },
-        {
-            title: "Advance Chat Application",
-            description: "",
-            image: "",
-            technologies: ["Next.js", "TypeScript", "JWT", "Supabase", "Tailwindcss"],
-            github: "",
-            live: "",
-        },
+        // {
+        //     title: "Advance Chat Application",
+        //     description: "",
+        //     image: "",
+        //     technologies: ["Next.js", "TypeScript", "JWT", "Supabase", "Tailwindcss"],
+        //     github: "",
+        //     live: "",
+        // },
             {
-            title: "Spotify Music Player",
-            description: "",
-            image: "",
-            technologies: ["Next.js", "TypeScript", "Rapid API", "", "Tailwindcss"],
-            github: "https://github.com/webcoding44/Movie-Webapplication",
-            live: "https://lambent-arithmetic-ac4d58.netlify.app/",
+            title: "CRM Dashboard",
+            description: "A modern React CRM dashboard with secure authentication, real-time kanban collaboration, sales and company management, interactive analytics charts, and fully responsive design across all devices. Built with scalable architecture and reusable components for a smooth and efficient business workflow.",
+            image: Crm,
+            technologies: ["React.TS", "TypeScript", "CRM", "Refine" ,"Tailwindcss"],
+            github: "https://github.com/webcoding44/CRM-Dashboard",
+            live: "https://crm-dashboard-omega-fawn.vercel.app/",
         }
     ];
 
@@ -75,11 +77,11 @@ const ProjectsSection = () => {
             live: "https://chat-app-vidoe-call.vercel.app/",
         },
         {
-            title: "Authentication System",
-            description: "",
-            technologies: ["Next.JS", "Better Auth", "Neon" , "Drizzle ORM"],
-            github: "",
-            live: "",
+            title: "Caffe Website",
+            description: "Built and deployed a modern interactive website using React and Tailwind CSS with advanced GSAP animations and scroll-based effects. Implemented parallax scrolling, SplitText reveals, pinned sections, scroll-synced animations, and a custom responsive UI for a smooth and engaging user experience across all devices.",
+            technologies: ["React.JS","GSAP.JS", "Tailwindcss"],
+            github: "https://github.com/webcoding44/Caffe-WEB",
+            live: "https://caffe-web-ochre.vercel.app/",
         },
     ];
 
