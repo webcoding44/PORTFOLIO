@@ -130,7 +130,7 @@ On the backend side, I work with Supabase, Drizzle ORM, and modern authenticatio
                   loop={true}
                   className="w-full h-auto"
                 /> */}
-                <img src="/public/23t.png" alt="My Picture" />
+                <img src="/23t.png" alt="My Picture" />
               </div>
             </div>
           </Reveal>
