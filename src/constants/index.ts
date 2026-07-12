@@ -17,11 +17,11 @@ export const SOCIAL_LINKS = [
     href: "https://leetcode.com/u/muj1t1D8eH/", 
     label: "Leetcode" 
   },
-  { 
-    icon: Twitter, 
-    href: "https://x.com/workonline34977", 
-    label: "Twitter" 
-  },
+  // { 
+  //   icon: Twitter, 
+  //   href: "https://x.com/workonline34977", 
+  //   label: "Twitter" 
+  // },
 ] as const;
 
 export const NAV_ITEMS = [

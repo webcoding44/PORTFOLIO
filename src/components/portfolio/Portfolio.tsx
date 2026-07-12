@@ -6,7 +6,7 @@ import EmailSidebar from "./EmailSidebar";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import SkillsSection from "./SkillsSection-Front-Back";
-// import ExperienceSection from "./ExperienceSection";
+import ExperienceSection from "./ExperienceSection";
 import ProjectsSection from "./ProjectsSection"
 import ContactSection from "./ContactSection";
 import Footer from "./Footer";
@@ -65,7 +65,7 @@ const Portfolio = () => {
         <AboutSection />
         <SkillsSection />
         {/* <SkillsSection1 /> */}
-        {/* <ExperienceSection /> */}
+        <ExperienceSection />
         <ProjectsSection />
         <ContactSection />
       </main>
