@@ -11,7 +11,7 @@ const ExperienceSection = () => {
     {
       company: "Talent Corner HR Services Pvt. Ltd.",
       role: "Front-End Engineer Intern",
-      date: "June 2025 – July 2025",
+      date: "June 2025 – may 2026",
       description: [
         "Worked on building and enhancing Saarthi360, a comprehensive CRM & HR management system used internally by the company and its franchisees.",
         "Built Saarthi360, a CRM & HR platform with multi-tenant architecture.",
@@ -23,7 +23,7 @@ const ExperienceSection = () => {
     {
       company: "Nullclass EdTech Pvt. Ltd.",
       role: "Frontend Developer Intern",
-      date: "Jan 2025 – may 2026",
+      date: "January 2025 – July 2025",
       description: [
         "Developed and enhanced responsive, user-friendly web interfaces for interactive projects.",
         "Implemented dynamic features such as portfolio tracking, sentiment analysis, and trading simulations to improve functionality and user experience.",

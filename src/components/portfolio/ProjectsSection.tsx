@@ -158,7 +158,7 @@ const ProjectsSection = () => {
             'Supabase',
           ],
           github: 'https://github.com/webcoding44/LMS-SaaS-Platform',
-          live: 'https://lms-saa-s-platform-five.vercel.app/companions/97a7379d-390e-4a85-8061-3482b95c224d',
+          live: 'https://lms-saa-s-platform.vercel.app/',
         },
         {
           title: 'Bookified AI',
