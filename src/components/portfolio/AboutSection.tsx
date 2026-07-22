@@ -101,7 +101,7 @@ const AboutSection = () => {
                     {/* <span className="font-semibold text-foreground">
                       Front-End Developer
                     </span>{" "} */}
-                    As a Front-End Engineer, I build scalable and high-performance web applications using React and modern JavaScript. I focus on writing clean, maintainable code and creating smooth, user-friendly interfaces.
+                    As a Full-Stack Developer, I build scalable and high-performance web applications using React and modern JavaScript. I focus on writing clean, maintainable code and creating smooth, user-friendly interfaces.
 
 For advanced interactions, I use GSAP to deliver fluid animations and Three.js to build immersive 3D UI experiences.
 
