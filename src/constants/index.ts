@@ -27,12 +27,14 @@ export const SOCIAL_LINKS = [
 export const NAV_ITEMS = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
-  { id: "experience", label: "Experience" },
+  // { id: "experience", label: "Experience" },
+  // { id: "projects", label: "Projects Web" },
+  // { id: "projects", label: "Projects Mobile" },
   { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },
 ] as const;
 
-export const SECTIONS = ["hero", "about", "skills", "experience", "projects", "contact"] as const;
+export const SECTIONS = ["hero", "about", "skills", "experience", "Web-Projects", "Figma Design-Projects" , "Mobile-Projects" , "contact"] as const;
 
 export const EMAIL = "webcoding44@gmail.com";
 

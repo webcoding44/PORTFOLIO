@@ -101,19 +101,20 @@ const AboutSection = () => {
                     {/* <span className="font-semibold text-foreground">
                       Front-End Developer
                     </span>{" "} */}
-                    As a Full-Stack Developer, I build scalable and high-performance web applications using React and modern JavaScript. I focus on writing clean, maintainable code and creating smooth, user-friendly interfaces.
+                    As a Full-Stack Engineer, I build scalable, high-performance webapplications using Next.JS and modern Typescript technologies. I focus on writing clean, maintainable code and creating smooth, intuitive user experiences across different platforms.
 
-For advanced interactions, I use GSAP to deliver fluid animations and Three.js to build immersive 3D UI experiences.
+For advanced interactions and visual experiences, I use GSAP to create fluid animations and Three.js to build immersive 3D interfaces.
 
-On the backend side, I work with Supabase, Drizzle ORM, and modern authentication solutions to build secure and efficient systems. I also follow best practices such as clean code, design patterns, and scalable architecture.
+On the backend side, I work with Nest.js and Supabase to build secure, scalable, and efficient systems. I follow software engineering best practices, including clean code, design patterns, reusable architecture, performance optimization, and maintainable project structures.
+
                   </p>
                 </div>
               </div>
 
               <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
                 <Link to="/resume">
-                  <button className="px-6 py-2.5 bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg font-semibold text-sm flex items-center gap-2 transition-all hover:gap-3 shadow-sm">
-                    <Download className="w-4 h-4" />
+                  <button className="neobrutalist-button neobrutalist-button-primary px-6 py-2.5 flex items-center gap-2 group">
+                    <Download className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
                     View Resume
                   </button>
                 </Link>
@@ -148,7 +149,7 @@ On the backend side, I work with Supabase, Drizzle ORM, and modern authenticatio
                   <p className="text-sm text-foreground/60">
                     Govt. Polytechnic Herat
                   </p>
-                  <span className="stat-badge text-xs bg-secondary/10 text-secondary border border-secondary/20 px-2 py-1 rounded-md font-bold inline-block mt-2">
+                  <span className="stat-badge text-xs inline-block mt-2">
                     91.52% Score
                   </span>
                 </div>
@@ -158,7 +159,7 @@ On the backend side, I work with Supabase, Drizzle ORM, and modern authenticatio
                   <p className="text-sm text-foreground/60">
                     IES New English School
                   </p>
-                  <span className="stat-badge text-xs bg-primary/10 text-primary border border-primary/20 px-2 py-1 rounded-md font-bold inline-block mt-2">
+                  <span className="stat-badge text-xs inline-block mt-2">
                     87.40% Score
                   </span>
                 </div>
@@ -186,14 +187,15 @@ On the backend side, I work with Supabase, Drizzle ORM, and modern authenticatio
                     <div
                       key={interest.label}
                       className="
-                        flex items-center gap-3
+                     flex items-center gap-3
                         px-3 py-3 sm:px-4
-                        rounded-xl
-                        border border-border/60
-                        bg-background/40
+                        rounded-none
+                        border-2 border-border
+                        bg-card
                         transition-all duration-300
-                        sm:hover:bg-muted/40
-                        sm:hover:shadow-sm
+                        hover:translate-y-[-2px]
+                        hover:shadow-brutal
+                        hover:border-primary
                       "
                     >
                       <div

@@ -3,6 +3,8 @@ import { Reveal } from "@/components/animations/Reveal";
 import { SOCIAL_LINKS, EMAIL } from "@/constants";
 import { Heart, Copy, Check, ArrowUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FooterCrystal } from "@/components/footer/FooterCrystal";
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -92,26 +94,47 @@ const Footer = () => {
             </Reveal>
           </div>
 
-
-          <div className="lg:col-span-4 flex flex-col justify-end space-y-10">
-            <Reveal delay={0.2}>
-              <div className="grid grid-cols-2 gap-4">
-                {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center justify-between p-4 rounded-2xl bg-secondary/30 hover:bg-secondary/50 border border-border/50 hover:border-primary/30 transition-all duration-300"
-                  >
-                    <span className="font-medium text-foreground/80 group-hover:text-foreground">{label}</span>
-                    <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-                  </a>
-                ))}
+          {/* Right Column: Contact + Crystal */}
+          <Reveal delay={0.2}>
+            <div className="space-y-8">
+              {/* Crystal Graphic */}
+              <div className="flex justify-end lg:justify-end mb-8">
+                <div className="relative">
+                  <FooterCrystal className="w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[240px] lg:h-[240px]" />
+                  <div className="absolute inset-0 -z-10 blur-xl opacity-30 bg-primary rounded-full scale-75 dark:opacity-20 dark:bg-primary/30" />
+                  <div
+                    className="absolute inset-0 -z-10 blur-2xl opacity-0 scale-90 bg-secondary rounded-full dark:opacity-25"
+                    aria-hidden
+                  />
+                </div>
               </div>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
         </div>
+
+
+
+
+         {/* Social Links */}
+        <Reveal delay={0.25}>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-16">
+            {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 px-6 py-3 bg-card border-2 border-primary transition-all duration-200 hover:translate-y-[-2px] hover:shadow-brutal"
+                aria-label={label}
+              >
+                <Icon className="w-5 h-5 text-primary dark:text-secondary" />
+                <span className="font-bold text-sm uppercase tracking-wider text-foreground group-hover:text-primary transition-colors">
+                  {label}
+                </span>
+              </a>
+            ))}
+          </div>
+        </Reveal>
 
 
         <div className="h-px w-full bg-gradient-to-r from-transparent via-border to-transparent mb-10" />
@@ -142,6 +165,7 @@ const Footer = () => {
           </div>
         </div>
       </div >
+
     </footer >
   );
 };

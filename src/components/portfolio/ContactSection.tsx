@@ -80,8 +80,7 @@ const ContactSection = () => {
           </Reveal>
 
           <Reveal>
-            <div className="neobrutalist-card p-8 relative overflow-hidden rounded-xl border border-primary/20 shadow-lg">
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+            <div className="neobrutalist-card p-8 relative overflow-hidden bg-card">
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -140,10 +139,10 @@ const ContactSection = () => {
                   {!isLoading && <Send size={18} className="relative z-10" />}
                 </Button>
                 {success && (
-                  <p role="status" aria-live="polite" className="text-sm mt-2 rounded-md border border-green-500/30 bg-green-500/10 text-green-400 px-3 py-2">Your message has been sent!</p>
+                  <p role="status" aria-live="polite" className="text-sm mt-2 border-2 border-green-500/30 bg-green-500/10 text-green-400 px-3 py-2">Your message has been sent!</p>
                 )}
                 {error && (
-                  <p role="status" aria-live="polite" className="text-sm mt-2 rounded-md border border-red-500/30 bg-red-500/10 text-red-400 px-3 py-2">Something went wrong. Please try again.</p>
+                  <p role="status" aria-live="polite" className="text-sm mt-2 border-2 border-red-500/30 bg-red-500/10 text-red-400 px-3 py-2">Something went wrong. Please try again.</p>
                 )}
               </form>
             </div>

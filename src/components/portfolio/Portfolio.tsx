@@ -5,14 +5,14 @@ import SocialSidebar from "./SocialSidebar";
 import EmailSidebar from "./EmailSidebar";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
-import SkillsSection from "./SkillsSection-Front-Back";
+import SkillsSection from "./SkillsSection";
 import ExperienceSection from "./ExperienceSection";
 import ProjectsSection from "./ProjectsSection"
 import ContactSection from "./ContactSection";
 import Footer from "./Footer";
 import MobileActionBar from "./MobileActionBar";
 import { SECTIONS } from "@/constants";
-// import SkillsSection1 from "./SkillsSection-Back-End";
+
 
 const Portfolio = () => {
   const [currentSection, setCurrentSection] = useState("hero");
@@ -64,7 +64,6 @@ const Portfolio = () => {
         <HeroSection onSectionClick={scrollToSection} />
         <AboutSection />
         <SkillsSection />
-        {/* <SkillsSection1 /> */}
         <ExperienceSection />
         <ProjectsSection />
         <ContactSection />

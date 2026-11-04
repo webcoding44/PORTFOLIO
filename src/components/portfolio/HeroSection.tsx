@@ -9,7 +9,7 @@ interface HeroSectionProps {
 }
 
 const HERO_TEXTS = [
-  "Front-End Engineer building fast, responsive apps.",
+  "Full-Stack Engineer building fast, responsive apps.",
   "Crafting clean UI with React & modern JS.",
   "Focused on performance and user experience.",
   "Turning ideas into smooth web interfaces.",
@@ -67,7 +67,8 @@ const HeroSection = ({ onSectionClick }: HeroSectionProps) => {
             <Reveal delay={0.15}>
               <div className="max-w-2xl mx-auto md:mx-0">
                 <p className="text-lg leading-relaxed text-foreground/80">
-I build modern web applications including business websites, SaaS platforms, and AI-powered apps. I focus on performance, scalability, and clean user experiences that drive real results.                </p>
+                I build modern web applications including business websites, SaaS platforms, and AI-powered apps. I focus on performance, scalability, and clean user experiences that drive real results.
+</p>
               </div>
             </Reveal>
 
