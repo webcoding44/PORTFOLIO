@@ -13,7 +13,7 @@ const ProjectsSection = () => {
 
     const Projects = [
         {
-            title: "Full-Functionality E-Commerce",
+            title: "Full-Functionality E-Commerce with Admin Panel",
             description: "",
             image: "",
             technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Strip" , "API" , "Sentry" ,],
@@ -21,34 +21,34 @@ const ProjectsSection = () => {
             live: "https://full-functionality-e-commerce.vercel.app/",
         },
                 {
-            title: "Chat-App",
-            description: "Ledger is a responsive web application that allows users to create, manage, and organize their notes. It features user authentication, a clean dashboard interface, and a RESTful API for note management operations.",
+            title: "Full-Functionality Chat-Application",
+            description: "",
             image: "",
-            technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL", "JWT"],
+            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Nest.js", "Postgres", "JWT"],
             github: "https://github.com/YashPalav-26/Ledger",
             live: "https://ledger-notesmanager.vercel.app/",
         },
                 {
             title: "ArchFlow-AI",
-            description: "Ghost AI is an AI-powered, real-time collaborative system-architecture builder. Users describe a system in plain English and a Gemini-powered agent autonomously draws nodes and edges onto a shared React Flow canvas — while teammates watch live and co-design with synced cursors, presence avatars, inline label editing, resizing, and a 12-color palette. A second AI task then converts the finalized graph into a comprehensive, multi-page Markdown technical specification, downloadable in one click.",
+            description: "ArchFlow-AI is an agentic planning workspace for software teams. Submit a natural-language prompt — \"Design a scalable e-commerce backend\" — and an autonomous AI architect places nodes and edges onto a shared React Flow canvas in real time. Your team watches the system take shape live, jumps in to refine it together, and when the design is right, a second AI task converts the visual graph into a comprehensive, multi-page Markdown technical specification ready to download and share.",
             image: ai,
             technologies: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Liveblock", "Trigger.dev", "Gemini API" , "Clerk"],
             github: "https://github.com/webcoding44/ArchFlow-AI",
             live: "https://arch-flow-ai-theta.vercel.app/",
         },
         {
-            title: "Calender ",
+            title: "Google Drive Storage Management",
             description: "ApexScript is a sleek, user-friendly code editor using HTML, CSS, React, and Tailwind CSS. Designed for all skill levels, it offers a clean interface and powerful features to enhance your coding experience across multiple languages, ensuring a seamless workflow.",
             image: "",
-            technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
+            technologies: ["Next.js", "Typescript", "Tailwind CSS", "...." , "......"],
             github: "https://github.com/YashPalav-26/ApexScript-CodeEditor",
             live: "https://yash-apexscript.vercel.app",
         },
         {
-            title: "Advance Crypto and tranding dashboard",
+            title: "Cryptocurrency Dashboard",
             description: "TradePro is a feature-rich, simulated trading platform designed to provide users with a realistic yet risk-free environment to practice trading strategies, monitor market data, and manage virtual portfolios.",
             image: "",
-            technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB", "JWT"],
+            technologies: ["Next.js", "TypeScript", "Neon", "Better Auth", "API"],
             github: "https://github.com/YashPalav-26/TradePro",
             live: "https://yash-tradepro.vercel.app/",
         },
@@ -57,51 +57,62 @@ const ProjectsSection = () => {
     const Projectsmall = [
         {
             title: " Modern Digital Banking Platform",
-            description: "Ledger is a responsive web application that allows users to create, manage, and organize their notes. It features user authentication, a clean dashboard interface, and a RESTful API for note management operations.",
+            description: "A modern digital banking platform that allows users to securely connect multiple bank accounts, monitor balances and transactions in real time, transfer funds, and manage their finances through a clean and intuitive dashboard.\n" +
+                "\n",
             image: "",
-            technologies: ["Next.js", "TypeScript", "Gsap.JS", "Tailwind CSS", "Supabase", "ai-sdk" , "API" , ],
-            github: "",
-            live: "",
+            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Appwrite", "Plaid", "Dwolla"],
+            github: "https://github.com/webcoding44/Banking-Dashboard",
+            live: "https://banking-dashboard-plum-theta.vercel.app/",
         },
                 {
             title: "Bookified-AI",
-            description: "Ledger is a responsive web application that allows users to create, manage, and organize their notes. It features user authentication, a clean dashboard interface, and a RESTful API for note management operations.",
+            description: "Bookified AI is a modern AI-powered platform that transforms traditional PDF books into intelligent conversational companions.\n" +
+                "\n" +
+                "Instead of simply reading static content, users can upload books, ask questions through natural voice conversations, generate AI-powered summaries, and interact with personalized voice assistants.",
             image: "",
-            technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL", "JWT"],
-            github: "https://github.com/YashPalav-26/Ledger",
-            live: "https://ledger-notesmanager.vercel.app/",
+            technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Vapi", "Mongodb", "Clerk"],
+            github: "https://github.com/webcoding44/Bookified-AI",
+            live: "https://bookified-ai-seven.vercel.app/",
         },
                 {
             title: "OfferPilot",
-            description: "Ghost AI is an AI-powered, real-time collaborative ",
+            description: "JobPilot is an autonomous, full-stack AI agent that transforms how technical job seekers find work. It simultaneously browses LinkedIn, Wellfound, and YC Jobs to discover roles, scores each against the user's profile with GPT-4o, and ranks them by match percentage in a filterable inventory dashboard\n" +
+                "\n",
             image: ai,
-            technologies: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "Liveblock", "Trigger.dev", "Gemini API" , "Clerk"],
-            github: "https://github.com/webcoding44/ArchFlow-AI",
-            live: "https://arch-flow-ai-theta.vercel.app/",
+            technologies: ["Next.js", "Typescript", "PostgreSQL", "Tailwind CSS", "PostHog", "GPT-4o", "Browserbase",],
+            github: "https://github.com/webcoding44/OfferPilot#how-it-works",
+            live: "https://offer-pilot-rsid-two.vercel.app/",
         },
         {
             title: "LMS-SaaS-Platform",
-            description: "ApexScript is a sleek, user-friendly code editor using HTML, CSS, React, and Tailwind CSS. Designed for all skill levels, it offers a clean interface and powerful features to enhance your coding experience across multiple languages, ensuring a seamless workflow.",
+            description: "This project is a full-stack AI-powered LMS SaaS platform built with modern web technologies.\n" +
+                "\n" +
+                "It allows users to learn through interactive AI voice tutors, manage subscriptions, and access personalized learning sessions in a scalable and production-ready system.\n" +
+                "\n" +
+                "Users can create learning sessions, interact with AI tutors, and experience real-time conversational education powered by Vapi AI.",
             image: "",
-            technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
-            github: "https://github.com/YashPalav-26/ApexScript-CodeEditor",
-            live: "https://yash-apexscript.vercel.app",
+            technologies: ["Next.js", "Tailwind CSS", "Vapi", "Supabase" , "Clerk"],
+            github: "https://github.com/webcoding44/LMS-SaaS-Platform",
+            live: "https://lms-saa-s-platform.vercel.app/",
         },
         {
             title: "Screen-Recorder",
-            description: "TradePro is a feature-rich, simulated trading platform designed to provide users with a realistic yet risk-free environment to practice trading strategies, monitor market data, and manage virtual portfolios.",
+            description: "ScreenFlow is a modern full-stack screen recording and video sharing platform that enables users to record their screens, upload videos, generate AI-powered transcripts, and share content securely.\n" +
+                "\n" +
+                "Built with Next.js, Bunny.net, Better Auth, Arcjet, Xata, and Drizzle ORM, the platform combines high-performance video hosting, secure authentication, intelligent search, and scalable infrastructure into a production-ready application.",
             image: "",
-            technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB", "JWT"],
-            github: "https://github.com/YashPalav-26/TradePro",
-            live: "https://yash-tradepro.vercel.app/",
+            technologies: ["Next.js", "TypeScript", "Bunny", "ORM", "xata" , "BetterAuth"],
+            github: "https://github.com/webcoding44/Screen-Recorder",
+            live: "https://screen-recorder-navy-phi.vercel.app/sign-in",
         },
                {
             title: "Live-Docs",
-            description: "TradePro is a feature-rich, simulated trading platform designed to provide users with a realistic yet risk-free environment to practice trading strategies, monitor market data, and manage virtual portfolios.",
+            description: "A real-time collaborative document platform that enables multiple users to create, edit, comment on, and share documents simultaneously. The platform features live collaboration, threaded comments, document permissions, notifications, and seamless teamwork across all devices.\n" +
+                "\n",
             image: "",
-            technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB", "JWT"],
-            github: "https://github.com/YashPalav-26/TradePro",
-            live: "https://yash-tradepro.vercel.app/",
+            technologies: ["Next.js", "TypeScript", "Liveblocks", "BetterAuth", "Tailwindcss"],
+            github: "https://github.com/webcoding44/Live-Docs",
+            live: "https://live-docs-kappa-ebon.vercel.app/",
         },
     ];
 
@@ -113,6 +124,7 @@ const ProjectsSection = () => {
                 <Reveal>
                     <h2 className="section-title text-center">Projects</h2>
                 </Reveal>
+
 
                 <div className="space-y-24 mt-16">
                     {Projects.map((project, index) => (

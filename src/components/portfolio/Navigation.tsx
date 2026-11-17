@@ -10,6 +10,7 @@ const Navigation = ({ currentSection, onSectionClick }: NavigationProps) => {
     { id: "hero", label: "" },
     { id: "about", label: "" },
     { id: "skills", label: "" },
+    { id: "services", label: "" },
     { id: "experience", label: "" },
     { id: "projects", label: "" },
     { id: "contact", label: "" },
